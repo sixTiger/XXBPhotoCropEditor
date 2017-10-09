@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62B7256C1F87D33D002EED72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B7256B1F87D33D002EED72 /* main.m */; };
+		62B7256F1F87D33D002EED72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B7256E1F87D33D002EED72 /* AppDelegate.m */; };
+		62B725721F87D33D002EED72 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B725711F87D33D002EED72 /* ViewController.m */; };
+		62B725751F87D33D002EED72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B725731F87D33D002EED72 /* Main.storyboard */; };
+		62B725771F87D33D002EED72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B725761F87D33D002EED72 /* Assets.xcassets */; };
+		62B7257A1F87D33D002EED72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B725781F87D33D002EED72 /* LaunchScreen.storyboard */; };
+		62B725841F87D4C0002EED72 /* XXBPhotoCropEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B725831F87D4C0002EED72 /* XXBPhotoCropEditorController.m */; };
+		62B725871F87D7B0002EED72 /* XXBImagePickerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B725861F87D7B0002EED72 /* XXBImagePickerUtil.m */; };
+		62B7258A1F87DC1D002EED72 /* XXBPhotoCropEditorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B725891F87DC1D002EED72 /* XXBPhotoCropEditorVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		62B725671F87D33D002EED72 /* XXBPhotoCropEditorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXBPhotoCropEditorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62B7256B1F87D33D002EED72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		62B7256D1F87D33D002EED72 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		62B7256E1F87D33D002EED72 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		62B725701F87D33D002EED72 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		62B725711F87D33D002EED72 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		62B725741F87D33D002EED72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		62B725761F87D33D002EED72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62B725791F87D33D002EED72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		62B7257B1F87D33D002EED72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62B725821F87D4C0002EED72 /* XXBPhotoCropEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBPhotoCropEditorController.h; sourceTree = "<group>"; };
+		62B725831F87D4C0002EED72 /* XXBPhotoCropEditorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBPhotoCropEditorController.m; sourceTree = "<group>"; };
+		62B725851F87D7B0002EED72 /* XXBImagePickerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBImagePickerUtil.h; sourceTree = "<group>"; };
+		62B725861F87D7B0002EED72 /* XXBImagePickerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBImagePickerUtil.m; sourceTree = "<group>"; };
+		62B725881F87DC1D002EED72 /* XXBPhotoCropEditorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBPhotoCropEditorVC.h; sourceTree = "<group>"; };
+		62B725891F87DC1D002EED72 /* XXBPhotoCropEditorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBPhotoCropEditorVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62B725641F87D33D002EED72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62B7255E1F87D33D002EED72 = {
+			isa = PBXGroup;
+			children = (
+				62B725691F87D33D002EED72 /* XXBPhotoCropEditorDemo */,
+				62B725681F87D33D002EED72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		62B725681F87D33D002EED72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62B725671F87D33D002EED72 /* XXBPhotoCropEditorDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62B725691F87D33D002EED72 /* XXBPhotoCropEditorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				62B725811F87D379002EED72 /* XXBPhotoCropEditor */,
+				62B7256D1F87D33D002EED72 /* AppDelegate.h */,
+				62B7256E1F87D33D002EED72 /* AppDelegate.m */,
+				62B725701F87D33D002EED72 /* ViewController.h */,
+				62B725711F87D33D002EED72 /* ViewController.m */,
+				62B725731F87D33D002EED72 /* Main.storyboard */,
+				62B725761F87D33D002EED72 /* Assets.xcassets */,
+				62B725781F87D33D002EED72 /* LaunchScreen.storyboard */,
+				62B7257B1F87D33D002EED72 /* Info.plist */,
+				62B7256A1F87D33D002EED72 /* Supporting Files */,
+				62B725851F87D7B0002EED72 /* XXBImagePickerUtil.h */,
+				62B725861F87D7B0002EED72 /* XXBImagePickerUtil.m */,
+			);
+			path = XXBPhotoCropEditorDemo;
+			sourceTree = "<group>";
+		};
+		62B7256A1F87D33D002EED72 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				62B7256B1F87D33D002EED72 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		62B725811F87D379002EED72 /* XXBPhotoCropEditor */ = {
+			isa = PBXGroup;
+			children = (
+				62B725821F87D4C0002EED72 /* XXBPhotoCropEditorController.h */,
+				62B725831F87D4C0002EED72 /* XXBPhotoCropEditorController.m */,
+				62B725881F87DC1D002EED72 /* XXBPhotoCropEditorVC.h */,
+				62B725891F87DC1D002EED72 /* XXBPhotoCropEditorVC.m */,
+			);
+			name = XXBPhotoCropEditor;
+			path = ../../XXBPhotoCropEditor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62B725661F87D33D002EED72 /* XXBPhotoCropEditorDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62B7257E1F87D33E002EED72 /* Build configuration list for PBXNativeTarget "XXBPhotoCropEditorDemo" */;
+			buildPhases = (
+				62B725631F87D33D002EED72 /* Sources */,
+				62B725641F87D33D002EED72 /* Frameworks */,
+				62B725651F87D33D002EED72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XXBPhotoCropEditorDemo;
+			productName = XXBPhotoCropEditorDemo;
+			productReference = 62B725671F87D33D002EED72 /* XXBPhotoCropEditorDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62B7255F1F87D33D002EED72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = xiaobing;
+				TargetAttributes = {
+					62B725661F87D33D002EED72 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 94ZS59957Y;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 62B725621F87D33D002EED72 /* Build configuration list for PBXProject "XXBPhotoCropEditorDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62B7255E1F87D33D002EED72;
+			productRefGroup = 62B725681F87D33D002EED72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62B725661F87D33D002EED72 /* XXBPhotoCropEditorDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62B725651F87D33D002EED72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62B7257A1F87D33D002EED72 /* LaunchScreen.storyboard in Resources */,
+				62B725771F87D33D002EED72 /* Assets.xcassets in Resources */,
+				62B725751F87D33D002EED72 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62B725631F87D33D002EED72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62B725721F87D33D002EED72 /* ViewController.m in Sources */,
+				62B7258A1F87DC1D002EED72 /* XXBPhotoCropEditorVC.m in Sources */,
+				62B725871F87D7B0002EED72 /* XXBImagePickerUtil.m in Sources */,
+				62B7256F1F87D33D002EED72 /* AppDelegate.m in Sources */,
+				62B725841F87D4C0002EED72 /* XXBPhotoCropEditorController.m in Sources */,
+				62B7256C1F87D33D002EED72 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		62B725731F87D33D002EED72 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62B725741F87D33D002EED72 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		62B725781F87D33D002EED72 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62B725791F87D33D002EED72 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		62B7257C1F87D33E002EED72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		62B7257D1F87D33E002EED72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62B7257F1F87D33E002EED72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 94ZS59957Y;
+				INFOPLIST_FILE = XXBPhotoCropEditorDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.XXBPhotoCropEditorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "01891aba-691a-4192-887f-f87a38016117";
+				PROVISIONING_PROFILE_SPECIFIER = BAIDU_APP_DEV;
+			};
+			name = Debug;
+		};
+		62B725801F87D33E002EED72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = XXBPhotoCropEditorDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.XXBPhotoCropEditorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62B725621F87D33D002EED72 /* Build configuration list for PBXProject "XXBPhotoCropEditorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62B7257C1F87D33E002EED72 /* Debug */,
+				62B7257D1F87D33E002EED72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62B7257E1F87D33E002EED72 /* Build configuration list for PBXNativeTarget "XXBPhotoCropEditorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62B7257F1F87D33E002EED72 /* Debug */,
+				62B725801F87D33E002EED72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62B7255F1F87D33D002EED72 /* Project object */;
+}
