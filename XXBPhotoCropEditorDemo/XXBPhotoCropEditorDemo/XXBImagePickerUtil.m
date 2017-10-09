@@ -8,9 +8,9 @@
 
 #import "XXBImagePickerUtil.h"
 #import "XXBPhotoCropEditorController.h"
-#import "XXBPhotoCropEditorVC.h"
+#import <RSKImageCropper/RSKImageCropper.h>
 
-@interface XXBImagePickerUtil ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate,XXBPhotoCropEditorControllerDelegate>
+@interface XXBImagePickerUtil ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate,XXBPhotoCropEditorControllerDelegate,RSKImageCropViewControllerDelegate>
 @property(nonatomic ,strong) UIImagePickerController *imagePicker;
 @end
 
@@ -105,10 +105,17 @@ static id _instance = nil;
     UIAlertAction *photoCropEditorController = [UIAlertAction actionWithTitle:@"XXBPhotoCropEditorController" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [weakSelf showPhotoCropEditorControllerWithImage:image navigation:navi];
     }];
+    
+    UIAlertAction *rskImageCropper = [UIAlertAction actionWithTitle:@"RSKImageCropper" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [weakSelf showRSKImageCropperWithImage:image navigation:navi];
+    }];
+    
     UIAlertAction *cancleAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
     }];
+    
     [alertController addAction:photoCropEditorController];
+    [alertController addAction:rskImageCropper];
     [alertController addAction:cancleAction];
     [controller presentViewController:alertController animated:YES completion:^{
         
@@ -122,6 +129,16 @@ static id _instance = nil;
     
 }
 
+- (void)showRSKImageCropperWithImage:(UIImage *)image navigation:(UINavigationController *)navigation {
+    
+    RSKImageCropViewController *imageCropVC = [[RSKImageCropViewController alloc] initWithImage:image cropMode:RSKImageCropModeSquare];
+    imageCropVC.portraitSquareMaskRectInnerEdgeInset = 0;
+    imageCropVC.avoidEmptySpaceAroundImage = YES;
+    imageCropVC.maskLayerStrokeColor = [UIColor redColor];
+    imageCropVC.delegate = self;
+    [navigation pushViewController:imageCropVC animated:YES];
+}
+
 - (UIImage*)image:(UIImage *)image scaledToSize:(CGSize)size {
     UIGraphicsBeginImageContext(size);
     [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
@@ -130,6 +147,7 @@ static id _instance = nil;
     return newImage;
 }
 
+#pragma mark - delegate
 - (void)photoCropEditorControllerDidCancel:(XXBPhotoCropEditorController *)cropperViewController {
     if (self.imagePicker.sourceType == UIImagePickerControllerSourceTypeCamera) {
         [self.imagePicker dismissViewControllerAnimated:YES completion:^{
@@ -150,5 +168,40 @@ static id _instance = nil;
         [UIApplication sharedApplication].statusBarHidden = NO;
     }];
 }
+
+#pragma mark - RSKImageCropViewControllerDelegate
+/**
+ Tells the delegate that crop image has been canceled.
+ */
+- (void)imageCropViewControllerDidCancelCrop:(RSKImageCropViewController *)controller {
+    
+}
+
+/**
+ Tells the delegate that the original image will be cropped.
+ */
+- (void)imageCropViewController:(RSKImageCropViewController *)controller willCropImage:(UIImage *)originalImage {
+    
+}
+
+/**
+ Tells the delegate that the original image has been cropped. Additionally provides a crop rect used to produce image.
+ */
+- (void)imageCropViewController:(RSKImageCropViewController *)controller didCropImage:(UIImage *)croppedImage usingCropRect:(CGRect)cropRect {
+    UIImage *image = [[UIImage alloc]initWithData:UIImageJPEGRepresentation(croppedImage, 0.5)];
+    if ([self.delegate respondsToSelector:@selector(imagePickerUtil:didSelectImage:)]) {
+        [self.delegate imagePickerUtil:self didSelectImage:image];
+    }
+    [self.imagePicker dismissViewControllerAnimated:YES completion:^{
+        [UIApplication sharedApplication].statusBarHidden = NO;
+    }];
+}
+
+///**
+// Tells the delegate that the original image has been cropped. Additionally provides a crop rect and a rotation angle used to produce image.
+// */
+//- (void)imageCropViewController:(RSKImageCropViewController *)controller didCropImage:(UIImage *)croppedImage usingCropRect:(CGRect)cropRect rotationAngle:(CGFloat)rotationAngle {
+//    
+//}
 
 @end

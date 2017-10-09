@@ -15,10 +15,11 @@
 		62B7257A1F87D33D002EED72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B725781F87D33D002EED72 /* LaunchScreen.storyboard */; };
 		62B725841F87D4C0002EED72 /* XXBPhotoCropEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B725831F87D4C0002EED72 /* XXBPhotoCropEditorController.m */; };
 		62B725871F87D7B0002EED72 /* XXBImagePickerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B725861F87D7B0002EED72 /* XXBImagePickerUtil.m */; };
-		62B7258A1F87DC1D002EED72 /* XXBPhotoCropEditorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B725891F87DC1D002EED72 /* XXBPhotoCropEditorVC.m */; };
+		7A079F293FE3516CCF44027F /* libPods-XXBPhotoCropEditorDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4C39521A842D70259AE82E /* libPods-XXBPhotoCropEditorDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1065CE55A74F79CAE09D068F /* Pods-XXBPhotoCropEditorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXBPhotoCropEditorDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XXBPhotoCropEditorDemo/Pods-XXBPhotoCropEditorDemo.release.xcconfig"; sourceTree = "<group>"; };
 		62B725671F87D33D002EED72 /* XXBPhotoCropEditorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXBPhotoCropEditorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B7256B1F87D33D002EED72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		62B7256D1F87D33D002EED72 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,8 +34,8 @@
 		62B725831F87D4C0002EED72 /* XXBPhotoCropEditorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBPhotoCropEditorController.m; sourceTree = "<group>"; };
 		62B725851F87D7B0002EED72 /* XXBImagePickerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBImagePickerUtil.h; sourceTree = "<group>"; };
 		62B725861F87D7B0002EED72 /* XXBImagePickerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBImagePickerUtil.m; sourceTree = "<group>"; };
-		62B725881F87DC1D002EED72 /* XXBPhotoCropEditorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBPhotoCropEditorVC.h; sourceTree = "<group>"; };
-		62B725891F87DC1D002EED72 /* XXBPhotoCropEditorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBPhotoCropEditorVC.m; sourceTree = "<group>"; };
+		AD4C39521A842D70259AE82E /* libPods-XXBPhotoCropEditorDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XXBPhotoCropEditorDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC606AF8152C5F08739A22A /* Pods-XXBPhotoCropEditorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXBPhotoCropEditorDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XXBPhotoCropEditorDemo/Pods-XXBPhotoCropEditorDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A079F293FE3516CCF44027F /* libPods-XXBPhotoCropEditorDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39F1B7CF2CA693E7EC3A251F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD4C39521A842D70259AE82E /* libPods-XXBPhotoCropEditorDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		62B7255E1F87D33D002EED72 = {
 			isa = PBXGroup;
 			children = (
 				62B725691F87D33D002EED72 /* XXBPhotoCropEditorDemo */,
 				62B725681F87D33D002EED72 /* Products */,
+				F1827F1908367E91D2523725 /* Pods */,
+				39F1B7CF2CA693E7EC3A251F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,11 +108,18 @@
 			children = (
 				62B725821F87D4C0002EED72 /* XXBPhotoCropEditorController.h */,
 				62B725831F87D4C0002EED72 /* XXBPhotoCropEditorController.m */,
-				62B725881F87DC1D002EED72 /* XXBPhotoCropEditorVC.h */,
-				62B725891F87DC1D002EED72 /* XXBPhotoCropEditorVC.m */,
 			);
 			name = XXBPhotoCropEditor;
 			path = ../../XXBPhotoCropEditor;
+			sourceTree = "<group>";
+		};
+		F1827F1908367E91D2523725 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFC606AF8152C5F08739A22A /* Pods-XXBPhotoCropEditorDemo.debug.xcconfig */,
+				1065CE55A74F79CAE09D068F /* Pods-XXBPhotoCropEditorDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,9 +129,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62B7257E1F87D33E002EED72 /* Build configuration list for PBXNativeTarget "XXBPhotoCropEditorDemo" */;
 			buildPhases = (
+				1A6688FA8D43F533FF84D560 /* [CP] Check Pods Manifest.lock */,
 				62B725631F87D33D002EED72 /* Sources */,
 				62B725641F87D33D002EED72 /* Frameworks */,
 				62B725651F87D33D002EED72 /* Resources */,
+				66959CDF43DA97785012B1A8 /* [CP] Embed Pods Frameworks */,
+				53EF8FB9C63A31849594E6C2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,13 +192,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A6688FA8D43F533FF84D560 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		53EF8FB9C63A31849594E6C2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XXBPhotoCropEditorDemo/Pods-XXBPhotoCropEditorDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66959CDF43DA97785012B1A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XXBPhotoCropEditorDemo/Pods-XXBPhotoCropEditorDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		62B725631F87D33D002EED72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				62B725721F87D33D002EED72 /* ViewController.m in Sources */,
-				62B7258A1F87DC1D002EED72 /* XXBPhotoCropEditorVC.m in Sources */,
 				62B725871F87D7B0002EED72 /* XXBImagePickerUtil.m in Sources */,
 				62B7256F1F87D33D002EED72 /* AppDelegate.m in Sources */,
 				62B725841F87D4C0002EED72 /* XXBPhotoCropEditorController.m in Sources */,
@@ -298,6 +367,7 @@
 		};
 		62B7257F1F87D33E002EED72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFC606AF8152C5F08739A22A /* Pods-XXBPhotoCropEditorDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 94ZS59957Y;
@@ -312,6 +382,7 @@
 		};
 		62B725801F87D33E002EED72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1065CE55A74F79CAE09D068F /* Pods-XXBPhotoCropEditorDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -342,6 +413,7 @@
 				62B725801F87D33E002EED72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
